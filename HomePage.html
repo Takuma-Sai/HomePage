@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崔拓真 ポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">崔拓真</div>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#works">作品</a></li>
+                <li><a href="#experience">経歴</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section id="hero">
+        <div class="container">
+            <h1>崔拓真</h1>
+            <p>肩書き・専門分野など</p>
+            <div class="cta-buttons">
+                <a href="#works" class="btn primary">作品を見る</a>
+                <a href="#contact" class="btn secondary">お問い合わせ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section id="about">
+        <div class="container">
+            <h2>自己紹介</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="崔拓真">
+                </div>
+                <div class="profile-text">
+                    <p>ここに自己紹介文を入れます。経歴や専門分野、仕事に対する姿勢などを書くとよいでしょう。</p>
+                    <p>2段落目の自己紹介文...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキル -->
+    <section id="skills">
+        <div class="container">
+            <h2>スキル</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>スキル1</h3>
+                    <p>スキルの説明文をここに入れます。</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>スキル2</h3>
+                    <p>スキルの説明文をここに入れます。</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>スキル3</h3>
+                    <p>スキルの説明文をここに入れます。</p>
+                </div>
+                <!-- 必要に応じてスキルを追加 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品 -->
+    <section id="works">
+        <div class="container">
+            <h2>作品</h2>
+            <div class="works-filter">
+                <button class="filter active" data-filter="all">すべて</button>
+                <button class="filter" data-filter="web">ウェブ</button>
+                <button class="filter" data-filter="design">デザイン</button>
+                <button class="filter" data-filter="other">その他</button>
+            </div>
+            <div class="works-grid">
+                <div class="work-item" data-category="web">
+                    <img src="work1.jpg" alt="作品1">
+                    <div class="work-info">
+                        <h3>作品タイトル1</h3>
+                        <p>作品の説明文</p>
+                        <a href="#" class="btn">詳細を見る</a>
+                    </div>
+                </div>
+                <div class="work-item" data-category="design">
+                    <img src="work2.jpg" alt="作品2">
+                    <div class="work-info">
+                        <h3>作品タイトル2</h3>
+                        <p>作品の説明文</p>
+                        <a href="#" class="btn">詳細を見る</a>
+                    </div>
+                </div>
+                <!-- 必要に応じて作品を追加 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 経歴 -->
+    <section id="experience">
+        <div class="container">
+            <h2>経歴</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2020 - 現在</div>
+                    <div class="content">
+                        <h3>会社名・役職</h3>
+                        <p>仕事内容や成果の説明</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2018 - 2020</div>
+                    <div class="content">
+                        <h3>会社名・役職</h3>
+                        <p>仕事内容や成果の説明</p>
+                    </div>
+                </div>
+                <!-- 必要に応じて経歴を追加 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>090-XXXX-XXXX</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 崔拓真 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
